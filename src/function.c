@@ -84,3 +84,15 @@ int CheckSinus (const char* s) {
 	}
 	else {return 0;}
 }
+
+int CheckCosinus (const char* s) { 
+	char cosinus[]="cos", *icosinus;
+	icosinus=strstr(s,cosinus);
+	if (icosinus != NULL) {
+		if (strlen(s)>3) {
+			return -1;
+		}
+		else {return 1;}
+	}
+	else {return 0;}
+}

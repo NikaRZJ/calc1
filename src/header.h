@@ -18,3 +18,5 @@ int CheckRoot (const char* s);
 
 int CheckSinus (const char* s);
 
+int CheckCosinus (const char* s);
+
