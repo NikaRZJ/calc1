@@ -37,3 +37,5 @@ double Division (void);
 double Exponent (void);
 
 double Root (void);
+
+double Sinus (void);
