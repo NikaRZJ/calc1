@@ -36,3 +36,15 @@ int CheckMultiplication (const char* s) {
 	}
 	else {return 0;}
 }
+
+int CheckDivision (const char* s) {
+	char slash[]="/", *islash;
+	islash=strstr(s,slash);
+	if (islash != NULL) {
+		if (strlen(s)>1) {
+			return -1;
+		}
+		else {return 1;}
+	}
+	else {return 0;}
+}
