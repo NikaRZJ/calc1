@@ -145,3 +145,75 @@ CTEST(menu, check_exponent)
 	ASSERT_EQUAL(exp3, result3);
 	ASSERT_EQUAL(exp4, result4);
 }
+
+CTEST(menu, check_root)
+{
+	//Given
+	char str1[] = "sqrt";
+	char str2[] = "vgfo";
+	char str3[] = "sqrtfrvirejvire";
+	char str4[] = "+";
+	//When
+	const int result1 = CheckRoot(str1);
+	const int result2 = CheckRoot(str2);
+	const int result3= CheckRoot(str3);
+	const int result4= CheckRoot(str4);
+	//Then
+	const int exp1 = 1;
+	const int exp2 = 0;
+	const int exp3 = -1;
+	const int exp4 = 0;
+
+	ASSERT_EQUAL(exp1, result1);
+	ASSERT_EQUAL(exp2, result2);
+	ASSERT_EQUAL(exp3, result3);
+	ASSERT_EQUAL(exp4, result4);
+}
+
+CTEST(menu, check_sinus)
+{
+	//Given
+	char str1[] = "sin";
+	char str2[] = "vgfo";
+	char str3[] = "sinqrtfrvirejvire";
+	char str4[] = "+";
+	//When
+	const int result1 = CheckSinus(str1);
+	const int result2 = CheckSinus(str2);
+	const int result3= CheckSinus(str3);
+	const int result4= CheckSinus(str4);
+	//Then
+	const int exp1 = 1;
+	const int exp2 = 0;
+	const int exp3 = -1;
+	const int exp4 = 0;
+
+	ASSERT_EQUAL(exp1, result1);
+	ASSERT_EQUAL(exp2, result2);
+	ASSERT_EQUAL(exp3, result3);
+	ASSERT_EQUAL(exp4, result4);
+}
+
+CTEST(menu, check_cosinus)
+{
+	//Given
+	char str1[] = "cos";
+	char str2[] = "vgfo";
+	char str3[] = "cosqrtfrvirejvire";
+	char str4[] = "+";
+	//When
+	const int result1 = CheckCosinus(str1);
+	const int result2 = CheckCosinus(str2);
+	const int result3= CheckCosinus(str3);
+	const int result4= CheckCosinus(str4);
+	//Then
+	const int exp1 = 1;
+	const int exp2 = 0;
+	const int exp3 = -1;
+	const int exp4 = 0;
+
+	ASSERT_EQUAL(exp1, result1);
+	ASSERT_EQUAL(exp2, result2);
+	ASSERT_EQUAL(exp3, result3);
+	ASSERT_EQUAL(exp4, result4);
+}
