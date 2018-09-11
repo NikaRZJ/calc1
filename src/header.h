@@ -14,3 +14,5 @@ int CheckDivision (const char* s);
 
 int CheckExponent (const char* s);
 
+int CheckRoot (const char* s);
+

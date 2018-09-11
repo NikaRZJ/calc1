@@ -60,3 +60,16 @@ int CheckExponent (const char* s) {
 	}
 	else {return 0;}
 }
+
+int CheckRoot (const char* s) {
+	char root[]="sqrt", *iroot;
+	iroot=strstr(s,root);
+	if (iroot != NULL) {
+		if (strlen(s)>4) {
+			return -1;
+		}
+		else {return 1;}
+	}
+	else {return 0;}
+}
+
