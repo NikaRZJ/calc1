@@ -252,3 +252,15 @@ double Sinus (void) {
 	r=sin(a);
 	return r;
 }
+
+double Cosinus (void) {
+	double a, r, res;
+	printf ("Enter number of radians: ");
+    	res=scanf ("%lg", &a);
+	if(res!=1) { 
+		printf("Error. Invalid input\n");
+		return -1;
+	}
+	r=cos(a);
+	return r;
+}
