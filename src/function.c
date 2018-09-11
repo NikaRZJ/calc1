@@ -13,3 +13,14 @@ int CheckAddition (const char* s) {
 	else {return 0;}
 }
 
+int CheckSubtraction (const char* s) { 
+	char minus[]="-", *iminus;
+	iminus=strstr(s,minus);
+	if (iminus != NULL) {
+		if (strlen(s)>1) {
+			return -1;
+		}
+		else {return 1;}
+	}
+	else {return 0;}
+}
