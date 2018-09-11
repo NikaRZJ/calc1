@@ -227,3 +227,16 @@ double Exponent (void) {
     	r=pow(a,b);
     	return r;
 }
+
+double Root (void) {
+	double a, r, res;
+	printf ("Enter a non-negative number: ");
+    	res=scanf ("%lg", &a);
+	if(res!=1) { 
+		printf("Error. Invalid input\n");
+		return -1;
+	}
+	if (a<0) {printf("Error. Invalid input\n");}
+	else {r=sqrt(a);}
+    	return r;
+}
