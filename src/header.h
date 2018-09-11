@@ -26,3 +26,4 @@ int CheckCotangens (const char* s);
 
 char CheckExit (const char* s);
 
+double Addition (void);
