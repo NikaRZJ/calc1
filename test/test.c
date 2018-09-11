@@ -217,3 +217,51 @@ CTEST(menu, check_cosinus)
 	ASSERT_EQUAL(exp3, result3);
 	ASSERT_EQUAL(exp4, result4);
 }
+
+CTEST(menu, check_tangens)
+{
+	//Given
+	char str1[] = "tg";
+	char str2[] = "vgfo";
+	char str3[] = "tgqrtfrvirejvire";
+	char str4[] = "+";
+	//When
+	const int result1 = CheckTangens(str1);
+	const int result2 = CheckTangens(str2);
+	const int result3= CheckTangens(str3);
+	const int result4= CheckTangens(str4);
+	//Then
+	const int exp1 = 1;
+	const int exp2 = 0;
+	const int exp3 = -1;
+	const int exp4 = 0;
+
+	ASSERT_EQUAL(exp1, result1);
+	ASSERT_EQUAL(exp2, result2);
+	ASSERT_EQUAL(exp3, result3);
+	ASSERT_EQUAL(exp4, result4);
+}
+
+CTEST(menu, check_cotangens)
+{
+	//Given
+	char str1[] = "ctg";
+	char str2[] = "vgfo";
+	char str3[] = "ctgqrtfrvirejvire";
+	char str4[] = "+";
+	//When
+	const int result1 = CheckCotangens(str1);
+	const int result2 = CheckCotangens(str2);
+	const int result3= CheckCotangens(str3);
+	const int result4= CheckCotangens(str4);
+	//Then
+	const int exp1 = 1;
+	const int exp2 = 0;
+	const int exp3 = -1;
+	const int exp4 = 0;
+
+	ASSERT_EQUAL(exp1, result1);
+	ASSERT_EQUAL(exp2, result2);
+	ASSERT_EQUAL(exp3, result3);
+	ASSERT_EQUAL(exp4, result4);
+}
