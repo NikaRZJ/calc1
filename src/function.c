@@ -96,3 +96,15 @@ int CheckCosinus (const char* s) {
 	}
 	else {return 0;}
 }
+
+int CheckTangens (const char* s) { 
+	char tangens[]="tg", *itangens;
+	itangens=strstr(s,tangens);
+	if (itangens != NULL) {
+		if (strlen(s)>2) {
+			return -1;
+		}
+		else {return 1;}
+	}
+	else {return 0;}
+}
