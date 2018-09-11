@@ -170,3 +170,23 @@ double Subtraction (void) {
     	r=a-b;
     	return r;
 }
+
+double Multiplication (void) {
+	double a, b, r,res;
+	printf ("Enter first number: ");
+    	res=scanf ("%lg", &a);
+    	if(res!=1) { 
+		printf("Error. Invalid input\n");
+		return -1;
+	}
+	printf ("Enter second number: ");
+    	res=0;
+    	res=scanf ("%lg", &b);
+	if(res!=1) { 
+		printf("Error. Invalid input\n");
+		return -1;
+	}
+    	r=a*b;
+    	return r;
+}
+

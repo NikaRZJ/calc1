@@ -28,4 +28,6 @@ char CheckExit (const char* s);
 
 double Addition (void);
 
-double Subtraction (void)
+double Subtraction (void);
+
+double Multiplication (void);
