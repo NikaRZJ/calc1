@@ -12,3 +12,5 @@ int CheckMultiplication (const char* s);
 
 int CheckDivision (const char* s);
 
+int CheckExponent (const char* s);
+

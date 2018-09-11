@@ -48,3 +48,15 @@ int CheckDivision (const char* s) {
 	}
 	else {return 0;}
 }
+
+int CheckExponent (const char* s) {
+	char exp[]="^", *iexp;
+	iexp=strstr(s,exp);
+	if (iexp != NULL) {
+		if (strlen(s)>1) {
+			return -1;
+		}
+		else {return 1;}
+	}
+	else {return 0;}
+}
