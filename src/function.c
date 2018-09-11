@@ -73,3 +73,14 @@ int CheckRoot (const char* s) {
 	else {return 0;}
 }
 
+int CheckSinus (const char* s) { 
+	char sinus[]="sin", *isinus;
+	isinus=strstr(s,sinus);
+	if (isinus != NULL) {
+		if (strlen(s)>3) {
+			return -1;
+		}
+		else {return 1;}
+	}
+	else {return 0;}
+}

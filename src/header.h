@@ -16,3 +16,5 @@ int CheckExponent (const char* s);
 
 int CheckRoot (const char* s);
 
+int CheckSinus (const char* s);
+
