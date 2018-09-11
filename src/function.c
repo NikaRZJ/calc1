@@ -24,3 +24,15 @@ int CheckSubtraction (const char* s) {
 	}
 	else {return 0;}
 }
+
+int CheckMultiplication (const char* s) {
+	char star[]="*", *istar;
+	istar=strstr(s,star);
+	if (istar != NULL) {
+		if (strlen(s)>1) {
+			return -1;
+		}
+		else {return 1;}
+	}
+	else {return 0;}
+}
