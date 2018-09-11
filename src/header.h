@@ -43,3 +43,5 @@ double Sinus (void);
 double Cosinus (void);
 
 double Tangens (void);
+
+double Cotangens (void);

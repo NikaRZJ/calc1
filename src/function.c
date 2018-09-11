@@ -276,3 +276,15 @@ double Tangens (void) {
 	r=tan(a);
 	return r;
 }
+
+double Cotangens (void) {
+	double a, r, res;
+	printf ("Enter number of radians: ");
+    	res=scanf ("%lg", &a);
+	if(res!=1) { 
+		printf("Error. Invalid input\n");
+		return -1;
+	}
+	r=1/tan(a);
+	return r;
+}
