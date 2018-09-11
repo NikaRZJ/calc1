@@ -121,3 +121,14 @@ int CheckCotangens (const char* s) {
 	else {return 0;}
 }
 
+char CheckExit (const char* s) {
+	char quit[]="q", *iquit;
+	iquit=strstr(s,quit);
+	if (iquit != NULL) {
+		if (strlen(s)>1) {
+			return -1;
+		}
+		else {return 1;}
+	}
+	else {return 0;}
+}

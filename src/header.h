@@ -24,3 +24,5 @@ int CheckTangens (const char* s);
 
 int CheckCotangens (const char* s);
 
+char CheckExit (const char* s);
+
