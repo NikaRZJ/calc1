@@ -108,3 +108,16 @@ int CheckTangens (const char* s) {
 	}
 	else {return 0;}
 }
+
+int CheckCotangens (const char* s) { 
+	char cotangens[]="ctg", *icotangens;
+	icotangens=strstr(s,cotangens);
+	if (icotangens != NULL) {
+		if (strlen(s)>3) {
+			return -1;
+		}
+		else {return 1;}
+	}
+	else {return 0;}
+}
+

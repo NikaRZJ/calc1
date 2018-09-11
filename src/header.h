@@ -22,3 +22,5 @@ int CheckCosinus (const char* s);
 
 int CheckTangens (const char* s);
 
+int CheckCotangens (const char* s);
+
