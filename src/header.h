@@ -31,3 +31,5 @@ double Addition (void);
 double Subtraction (void);
 
 double Multiplication (void);
+
+double Division (void);
