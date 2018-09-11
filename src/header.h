@@ -45,3 +45,5 @@ double Cosinus (void);
 double Tangens (void);
 
 double Cotangens (void);
+
+double Calc (const char* s);

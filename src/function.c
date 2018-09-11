@@ -288,3 +288,90 @@ double Cotangens (void) {
 	r=1/tan(a);
 	return r;
 }
+
+double Calc (const char* s)	{
+	double r,f=0;
+	
+	if (CheckAddition (s)==1) {
+		r=Addition();
+		return r;
+	}
+	
+	if (CheckSubtraction (s)==1) {
+		r=Subtraction();
+		return r;
+	}
+	
+	if (CheckMultiplication (s)==1) {
+		r=Multiplication();
+		return r;
+	}
+	
+	if (CheckDivision (s)==1) {
+		r=Division();
+		return r;
+	}
+	if (CheckExponent (s)==1) {
+		r=Exponent();
+		return r;
+	}
+	if (CheckRoot (s)==1) {
+		r=Root();
+		return r;
+	}
+	if (CheckSinus (s)==1) {
+		r=Sinus();
+		return r;
+	}
+	if (CheckCosinus (s)==1) {
+		r=Cosinus();
+		return r;
+	}
+	if (CheckTangens (s)==1) {
+		r=Tangens();
+		return r;
+	}
+	if (CheckCotangens (s)==1) {
+		r=Cotangens();
+		return r;
+	}
+        if (CheckAddition (s)<=0) {
+		f+=1;
+	}
+	
+	if (CheckSubtraction (s)<=0) {
+		f+=1;
+	}
+	
+	if (CheckMultiplication (s)<=0) {
+		f+=1;
+	}
+	
+	if (CheckDivision (s)<=0) {
+		f+=1;
+	}
+	if (CheckExponent (s)<=0) {
+		f+=1;
+	}
+	if (CheckRoot (s)<=0) {
+		f+=1;
+	}
+	if (CheckSinus (s)<=0) {
+		f+=1;
+	}
+	if (CheckCosinus (s)<=0) {
+		f+=1;
+	}
+	if (CheckTangens (s)<=0) {
+		f+=1;
+	}
+	if (CheckCotangens (s)<=0) {
+		f+=1;
+	}
+        if (f==10) {
+		printf ("Error. Operation not found\n");
+		return -1;
+	}
+	
+	return -1;	
+}
