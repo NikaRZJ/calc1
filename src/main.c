@@ -16,4 +16,5 @@ int main () {
 		printf ("\n");
 		fflush (stdin);
     	}
+	return 0;
 }
