@@ -264,3 +264,15 @@ double Cosinus (void) {
 	r=cos(a);
 	return r;
 }
+
+double Tangens (void) {
+	double a, r, res;
+	printf ("Enter number of radians: ");
+    	res=scanf ("%lg", &a);
+	if(res!=1) { 
+		printf("Error. Invalid input\n");
+		return -1;
+	}
+	r=tan(a);
+	return r;
+}

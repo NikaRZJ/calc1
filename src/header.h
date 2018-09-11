@@ -41,3 +41,5 @@ double Root (void);
 double Sinus (void);
 
 double Cosinus (void);
+
+double Tangens (void);
